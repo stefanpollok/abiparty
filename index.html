@@ -11,6 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script>
 	</head>
 	<body class="is-preload">
 
@@ -19,11 +24,11 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-birthday-cake"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-camera"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-music"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon solid fa-calendar"><span>Twitter</span></a>
-                        <a href="https://twitter.com/ajlkn" class="icon solid fa-search-location"><span>Twitter</span></a>
+						<a href="#home" class="icon solid fa-birthday-cake"><span>Home</span></a>
+						<a href="#images" class="icon solid fa-camera"><span>Work</span></a>
+						<a href="#playlist" class="icon solid fa-music"><span>Contact</span></a>
+						<a href="#date" class="icon solid fa-calendar"><span>Twitter</span></a>
+                        <a href="#location" class="icon solid fa-search-location"><span>Twitter</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -56,48 +61,44 @@
                                     sowie herrliche Schmankerl aus unserer Schulzeit.
 								</p>
                                 <p>
-									Wir sind auf der Suche nach weiteren herrlichen Bildern!
-                                <p>
-									Gerne an <a href="mailto:abiparty@diebesteqimstall.de?subject=Bilder für die Abiparty">abiparty@diebesteqimstall.de</a> weiterleiten.
-								</p>
+									Wir sind auf der Suche nach weiteren herrlichen Bildern! <br>
+                                    Gerne an <a href="mailto:abiparty@diebesteqimstall.de?subject=Bilder für die Abiparty">abiparty@diebesteqimstall.de</a> weiterleiten.
 								<section>
 									<div class="row">
                                         <div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/aula_saa.png" alt=""></a>
+											<img src="images/aula_saa.png" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/scheiss_q11.png" alt=""></a>
-										</div>
+											<img src="images/scheiss_q11.png" alt="">
                                         <div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/bar_saa.jpg" alt=""></a>
+											<img src="images/bar_saa.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/malle_hotel.jpg" alt=""></a>
+											<img src="images/malle_hotel.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/malle_club.png" alt=""></a>
+											<img src="images/malle_club.png" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+											<img src="images/pic05.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+											<img src="images/pic06.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+											<img src="images/pic08.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+											<img src="images/pic09.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+											<img src="images/pic10.jpg" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+											<img src="images/pic11.jpg" alt="">
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<img src="images/pic12.jpg" alt="">
 										</div>
 									</div>
 								</section>
@@ -112,7 +113,8 @@
                                     <div class="col-12">
                                     <iframe
                                         src="https://open.spotify.com/embed/playlist/7xIsoRvTawnUkIXtFKIXg0"
-                                        frameborder="0" allowtransparency="true" allow="encrypted-media">
+                                        frameborder="0" allowtransparency="true" allow="encrypted-media"
+                                        onload="resizeIframe(this)">
                                     </iframe>
                                     </div>
                                     <div class="col-12">
@@ -144,7 +146,8 @@
 									<h2>Location, Location, Location!</h2>
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.45094702644!2d11.75392471590078!3d48.17866235627709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e0bea312b499f%3A0x8fdac5dde975b73!2sDorfstra%C3%9Fe%204%2C%2085551%20Kirchheim%20bei%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sdk!4v1645298545363!5m2!1sen!2sdk"
-                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        style="border:0;" allowfullscreen="" loading="lazy" onload="resizeIframe(this)">
+                                    </iframe>
 								</header>
                                 <a href="https://www.xn--zehmerbru-22a.de/" class="jumplink pic">
                                     <img src="images/zehmer.png" alt="" />
@@ -156,7 +159,7 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Stefan Pollok. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Stufensprecher Q12. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
