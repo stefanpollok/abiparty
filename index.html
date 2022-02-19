@@ -11,11 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <script>
-            function resizeIframe(obj) {
-              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-            }
-        </script>
 	</head>
 	<body class="is-preload">
 
@@ -25,10 +20,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#home" class="icon solid fa-birthday-cake"><span>Home</span></a>
-						<a href="#images" class="icon solid fa-camera"><span>Work</span></a>
-						<a href="#playlist" class="icon solid fa-music"><span>Contact</span></a>
-						<a href="#date" class="icon solid fa-calendar"><span>Twitter</span></a>
-                        <a href="#location" class="icon solid fa-search-location"><span>Twitter</span></a>
+						<a href="#images" class="icon solid fa-camera"><span>Bildergalerie</span></a>
+						<a href="#playlist" class="icon solid fa-music"><span>Playlist</span></a>
+						<a href="#date" class="icon solid fa-calendar"><span>Datum</span></a>
+                        <a href="#location" class="icon solid fa-search-location"><span>Location</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -69,36 +64,58 @@
 											<img src="images/aula_saa.png" alt="">
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/scheiss_q11.png" alt="">
+											<div class="image-fit">
+                                                <img src="images/scheiss_q11.png" alt="">
+                                            </div>
                                         <div class="col-4 col-6-medium col-12-small">
-											<img src="images/bar_saa.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/bar_saa.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/malle_hotel.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/malle_hotel.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/malle_club.png" alt="">
+                                            <div class="image-fit">
+											    <img src="images/malle_club.png" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic05.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic05.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic06.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic06.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic08.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic08.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic09.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic09.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic10.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic10.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic11.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic11.jpg" alt="">
+                                            </div>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<img src="images/pic12.jpg" alt="">
+                                            <div class="image-fit">
+											    <img src="images/pic12.jpg" alt="">
+                                            </div>
 										</div>
 									</div>
 								</section>
@@ -113,13 +130,8 @@
                                     <div class="col-12">
                                     <iframe
                                         src="https://open.spotify.com/embed/playlist/7xIsoRvTawnUkIXtFKIXg0"
-                                        frameborder="0" allowtransparency="true" allow="encrypted-media"
-                                        onload="resizeIframe(this)">
+                                        width=100% height=100% frameborder="0" allowtransparency="true" allow="encrypted-media">
                                     </iframe>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="button" value="Playlist bearbeiten"
-                                        onclick="window.location.href='https://open.spotify.com/playlist/7xIsoRvTawnUkIXtFKIXg0?go=1&sp_cid=ecf83a554aec32ad9034f3985d7ebc78&utm_source=embed_player_m&utm_medium=desktop&nd=1'" />
                                     </div>
                                 </div>
 							</article>
@@ -135,7 +147,7 @@
                                         <a href="#" class="image fit"><img src="images/calendar.png" alt=""></a>
                                     </div>
                                     <div class="col-12">
-                                        <input type="button" value="Abstimmen in Doodle"/>
+                                        <input type="button" value="Abstimmen auf Doodle"/>
                                     </div>
                                 </div>
 							</article>
@@ -146,7 +158,7 @@
 									<h2>Location, Location, Location!</h2>
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.45094702644!2d11.75392471590078!3d48.17866235627709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e0bea312b499f%3A0x8fdac5dde975b73!2sDorfstra%C3%9Fe%204%2C%2085551%20Kirchheim%20bei%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sdk!4v1645298545363!5m2!1sen!2sdk"
-                                        style="border:0;" allowfullscreen="" loading="lazy" onload="resizeIframe(this)">
+                                        width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy">
                                     </iframe>
 								</header>
                                 <a href="https://www.xn--zehmerbru-22a.de/" class="jumplink pic">
